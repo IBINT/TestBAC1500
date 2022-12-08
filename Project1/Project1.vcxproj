@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{242643b0-5b2e-43b8-ac67-59ce8f853059}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="demo_c0.cpp" />
+    <ClCompile Include="demo_c1.cpp" />
+    <ClCompile Include="demo_c10.cpp" />
+    <ClCompile Include="demo_c100.cpp" />
+    <ClCompile Include="demo_c101.cpp" />
+    <ClCompile Include="demo_c102.cpp" />
+    <ClCompile Include="demo_c103.cpp" />
+    <ClCompile Include="demo_c104.cpp" />
+    <ClCompile Include="demo_c105.cpp" />
+    <ClCompile Include="demo_c106.cpp" />
+    <ClCompile Include="demo_c107.cpp" />
+    <ClCompile Include="demo_c108.cpp" />
+    <ClCompile Include="demo_c109.cpp" />
+    <ClCompile Include="demo_c11.cpp" />
+    <ClCompile Include="demo_c110.cpp" />
+    <ClCompile Include="demo_c111.cpp" />
+    <ClCompile Include="demo_c112.cpp" />
+    <ClCompile Include="demo_c113.cpp" />
+    <ClCompile Include="demo_c114.cpp" />
+    <ClCompile Include="demo_c115.cpp" />
+    <ClCompile Include="demo_c116.cpp" />
+    <ClCompile Include="demo_c117.cpp" />
+    <ClCompile Include="demo_c118.cpp" />
+    <ClCompile Include="demo_c119.cpp" />
+    <ClCompile Include="demo_c12.cpp" />
+    <ClCompile Include="demo_c120.cpp" />
+    <ClCompile Include="demo_c121.cpp" />
+    <ClCompile Include="demo_c122.cpp" />
+    <ClCompile Include="demo_c123.cpp" />
+    <ClCompile Include="demo_c124.cpp" />
+    <ClCompile Include="demo_c125.cpp" />
+    <ClCompile Include="demo_c126.cpp" />
+    <ClCompile Include="demo_c127.cpp" />
+    <ClCompile Include="demo_c128.cpp" />
+    <ClCompile Include="demo_c129.cpp" />
+    <ClCompile Include="demo_c13.cpp" />
+    <ClCompile Include="demo_c130.cpp" />
+    <ClCompile Include="demo_c131.cpp" />
+    <ClCompile Include="demo_c132.cpp" />
+    <ClCompile Include="demo_c133.cpp" />
+    <ClCompile Include="demo_c134.cpp" />
+    <ClCompile Include="demo_c135.cpp" />
+    <ClCompile Include="demo_c136.cpp" />
+    <ClCompile Include="demo_c137.cpp" />
+    <ClCompile Include="demo_c138.cpp" />
+    <ClCompile Include="demo_c139.cpp" />
+    <ClCompile Include="demo_c14.cpp" />
+    <ClCompile Include="demo_c140.cpp" />
+    <ClCompile Include="demo_c141.cpp" />
+    <ClCompile Include="demo_c142.cpp" />
+    <ClCompile Include="demo_c143.cpp" />
+    <ClCompile Include="demo_c144.cpp" />
+    <ClCompile Include="demo_c145.cpp" />
+    <ClCompile Include="demo_c146.cpp" />
+    <ClCompile Include="demo_c147.cpp" />
+    <ClCompile Include="demo_c148.cpp" />
+    <ClCompile Include="demo_c149.cpp" />
+    <ClCompile Include="demo_c15.cpp" />
+    <ClCompile Include="demo_c150.cpp" />
+    <ClCompile Include="demo_c151.cpp" />
+    <ClCompile Include="demo_c152.cpp" />
+    <ClCompile Include="demo_c153.cpp" />
+    <ClCompile Include="demo_c154.cpp" />
+    <ClCompile Include="demo_c155.cpp" />
+    <ClCompile Include="demo_c156.cpp" />
+    <ClCompile Include="demo_c157.cpp" />
+    <ClCompile Include="demo_c158.cpp" />
+    <ClCompile Include="demo_c159.cpp" />
+    <ClCompile Include="demo_c16.cpp" />
+    <ClCompile Include="demo_c160.cpp" />
+    <ClCompile Include="demo_c161.cpp" />
+    <ClCompile Include="demo_c162.cpp" />
+    <ClCompile Include="demo_c163.cpp" />
+    <ClCompile Include="demo_c164.cpp" />
+    <ClCompile Include="demo_c165.cpp" />
+    <ClCompile Include="demo_c166.cpp" />
+    <ClCompile Include="demo_c167.cpp" />
+    <ClCompile Include="demo_c168.cpp" />
+    <ClCompile Include="demo_c169.cpp" />
+    <ClCompile Include="demo_c17.cpp" />
+    <ClCompile Include="demo_c170.cpp" />
+    <ClCompile Include="demo_c171.cpp" />
+    <ClCompile Include="demo_c172.cpp" />
+    <ClCompile Include="demo_c173.cpp" />
+    <ClCompile Include="demo_c174.cpp" />
+    <ClCompile Include="demo_c175.cpp" />
+    <ClCompile Include="demo_c176.cpp" />
+    <ClCompile Include="demo_c177.cpp" />
+    <ClCompile Include="demo_c178.cpp" />
+    <ClCompile Include="demo_c179.cpp" />
+    <ClCompile Include="demo_c18.cpp" />
+    <ClCompile Include="demo_c180.cpp" />
+    <ClCompile Include="demo_c181.cpp" />
+    <ClCompile Include="demo_c182.cpp" />
+    <ClCompile Include="demo_c183.cpp" />
+    <ClCompile Include="demo_c184.cpp" />
+    <ClCompile Include="demo_c185.cpp" />
+    <ClCompile Include="demo_c186.cpp" />
+    <ClCompile Include="demo_c187.cpp" />
+    <ClCompile Include="demo_c188.cpp" />
+    <ClCompile Include="demo_c189.cpp" />
+    <ClCompile Include="demo_c19.cpp" />
+    <ClCompile Include="demo_c190.cpp" />
+    <ClCompile Include="demo_c191.cpp" />
+    <ClCompile Include="demo_c192.cpp" />
+    <ClCompile Include="demo_c193.cpp" />
+    <ClCompile Include="demo_c194.cpp" />
+    <ClCompile Include="demo_c195.cpp" />
+    <ClCompile Include="demo_c196.cpp" />
+    <ClCompile Include="demo_c197.cpp" />
+    <ClCompile Include="demo_c198.cpp" />
+    <ClCompile Include="demo_c199.cpp" />
+    <ClCompile Include="demo_c2.cpp" />
+    <ClCompile Include="demo_c20.cpp" />
+    <ClCompile Include="demo_c200.cpp" />
+    <ClCompile Include="demo_c201.cpp" />
+    <ClCompile Include="demo_c202.cpp" />
+    <ClCompile Include="demo_c203.cpp" />
+    <ClCompile Include="demo_c204.cpp" />
+    <ClCompile Include="demo_c205.cpp" />
+    <ClCompile Include="demo_c206.cpp" />
+    <ClCompile Include="demo_c207.cpp" />
+    <ClCompile Include="demo_c208.cpp" />
+    <ClCompile Include="demo_c209.cpp" />
+    <ClCompile Include="demo_c21.cpp" />
+    <ClCompile Include="demo_c210.cpp" />
+    <ClCompile Include="demo_c211.cpp" />
+    <ClCompile Include="demo_c212.cpp" />
+    <ClCompile Include="demo_c213.cpp" />
+    <ClCompile Include="demo_c214.cpp" />
+    <ClCompile Include="demo_c215.cpp" />
+    <ClCompile Include="demo_c216.cpp" />
+    <ClCompile Include="demo_c217.cpp" />
+    <ClCompile Include="demo_c218.cpp" />
+    <ClCompile Include="demo_c219.cpp" />
+    <ClCompile Include="demo_c22.cpp" />
+    <ClCompile Include="demo_c220.cpp" />
+    <ClCompile Include="demo_c221.cpp" />
+    <ClCompile Include="demo_c222.cpp" />
+    <ClCompile Include="demo_c223.cpp" />
+    <ClCompile Include="demo_c224.cpp" />
+    <ClCompile Include="demo_c225.cpp" />
+    <ClCompile Include="demo_c226.cpp" />
+    <ClCompile Include="demo_c227.cpp" />
+    <ClCompile Include="demo_c228.cpp" />
+    <ClCompile Include="demo_c229.cpp" />
+    <ClCompile Include="demo_c23.cpp" />
+    <ClCompile Include="demo_c230.cpp" />
+    <ClCompile Include="demo_c231.cpp" />
+    <ClCompile Include="demo_c232.cpp" />
+    <ClCompile Include="demo_c233.cpp" />
+    <ClCompile Include="demo_c234.cpp" />
+    <ClCompile Include="demo_c235.cpp" />
+    <ClCompile Include="demo_c236.cpp" />
+    <ClCompile Include="demo_c237.cpp" />
+    <ClCompile Include="demo_c238.cpp" />
+    <ClCompile Include="demo_c239.cpp" />
+    <ClCompile Include="demo_c24.cpp" />
+    <ClCompile Include="demo_c240.cpp" />
+    <ClCompile Include="demo_c241.cpp" />
+    <ClCompile Include="demo_c242.cpp" />
+    <ClCompile Include="demo_c243.cpp" />
+    <ClCompile Include="demo_c244.cpp" />
+    <ClCompile Include="demo_c245.cpp" />
+    <ClCompile Include="demo_c246.cpp" />
+    <ClCompile Include="demo_c247.cpp" />
+    <ClCompile Include="demo_c248.cpp" />
+    <ClCompile Include="demo_c249.cpp" />
+    <ClCompile Include="demo_c25.cpp" />
+    <ClCompile Include="demo_c250.cpp" />
+    <ClCompile Include="demo_c251.cpp" />
+    <ClCompile Include="demo_c252.cpp" />
+    <ClCompile Include="demo_c253.cpp" />
+    <ClCompile Include="demo_c254.cpp" />
+    <ClCompile Include="demo_c255.cpp" />
+    <ClCompile Include="demo_c256.cpp" />
+    <ClCompile Include="demo_c257.cpp" />
+    <ClCompile Include="demo_c258.cpp" />
+    <ClCompile Include="demo_c259.cpp" />
+    <ClCompile Include="demo_c26.cpp" />
+    <ClCompile Include="demo_c260.cpp" />
+    <ClCompile Include="demo_c261.cpp" />
+    <ClCompile Include="demo_c262.cpp" />
+    <ClCompile Include="demo_c263.cpp" />
+    <ClCompile Include="demo_c264.cpp" />
+    <ClCompile Include="demo_c265.cpp" />
+    <ClCompile Include="demo_c266.cpp" />
+    <ClCompile Include="demo_c267.cpp" />
+    <ClCompile Include="demo_c268.cpp" />
+    <ClCompile Include="demo_c269.cpp" />
+    <ClCompile Include="demo_c27.cpp" />
+    <ClCompile Include="demo_c270.cpp" />
+    <ClCompile Include="demo_c271.cpp" />
+    <ClCompile Include="demo_c272.cpp" />
+    <ClCompile Include="demo_c273.cpp" />
+    <ClCompile Include="demo_c274.cpp" />
+    <ClCompile Include="demo_c275.cpp" />
+    <ClCompile Include="demo_c276.cpp" />
+    <ClCompile Include="demo_c277.cpp" />
+    <ClCompile Include="demo_c278.cpp" />
+    <ClCompile Include="demo_c279.cpp" />
+    <ClCompile Include="demo_c28.cpp" />
+    <ClCompile Include="demo_c280.cpp" />
+    <ClCompile Include="demo_c281.cpp" />
+    <ClCompile Include="demo_c282.cpp" />
+    <ClCompile Include="demo_c283.cpp" />
+    <ClCompile Include="demo_c284.cpp" />
+    <ClCompile Include="demo_c285.cpp" />
+    <ClCompile Include="demo_c286.cpp" />
+    <ClCompile Include="demo_c287.cpp" />
+    <ClCompile Include="demo_c288.cpp" />
+    <ClCompile Include="demo_c289.cpp" />
+    <ClCompile Include="demo_c29.cpp" />
+    <ClCompile Include="demo_c290.cpp" />
+    <ClCompile Include="demo_c291.cpp" />
+    <ClCompile Include="demo_c292.cpp" />
+    <ClCompile Include="demo_c293.cpp" />
+    <ClCompile Include="demo_c294.cpp" />
+    <ClCompile Include="demo_c295.cpp" />
+    <ClCompile Include="demo_c296.cpp" />
+    <ClCompile Include="demo_c297.cpp" />
+    <ClCompile Include="demo_c298.cpp" />
+    <ClCompile Include="demo_c299.cpp" />
+    <ClCompile Include="demo_c3.cpp" />
+    <ClCompile Include="demo_c30.cpp" />
+    <ClCompile Include="demo_c300.cpp" />
+    <ClCompile Include="demo_c301.cpp" />
+    <ClCompile Include="demo_c302.cpp" />
+    <ClCompile Include="demo_c303.cpp" />
+    <ClCompile Include="demo_c304.cpp" />
+    <ClCompile Include="demo_c305.cpp" />
+    <ClCompile Include="demo_c306.cpp" />
+    <ClCompile Include="demo_c307.cpp" />
+    <ClCompile Include="demo_c308.cpp" />
+    <ClCompile Include="demo_c309.cpp" />
+    <ClCompile Include="demo_c31.cpp" />
+    <ClCompile Include="demo_c310.cpp" />
+    <ClCompile Include="demo_c311.cpp" />
+    <ClCompile Include="demo_c312.cpp" />
+    <ClCompile Include="demo_c313.cpp" />
+    <ClCompile Include="demo_c314.cpp" />
+    <ClCompile Include="demo_c315.cpp" />
+    <ClCompile Include="demo_c316.cpp" />
+    <ClCompile Include="demo_c317.cpp" />
+    <ClCompile Include="demo_c318.cpp" />
+    <ClCompile Include="demo_c319.cpp" />
+    <ClCompile Include="demo_c32.cpp" />
+    <ClCompile Include="demo_c320.cpp" />
+    <ClCompile Include="demo_c321.cpp" />
+    <ClCompile Include="demo_c322.cpp" />
+    <ClCompile Include="demo_c323.cpp" />
+    <ClCompile Include="demo_c324.cpp" />
+    <ClCompile Include="demo_c325.cpp" />
+    <ClCompile Include="demo_c326.cpp" />
+    <ClCompile Include="demo_c327.cpp" />
+    <ClCompile Include="demo_c328.cpp" />
+    <ClCompile Include="demo_c329.cpp" />
+    <ClCompile Include="demo_c33.cpp" />
+    <ClCompile Include="demo_c330.cpp" />
+    <ClCompile Include="demo_c331.cpp" />
+    <ClCompile Include="demo_c332.cpp" />
+    <ClCompile Include="demo_c333.cpp" />
+    <ClCompile Include="demo_c334.cpp" />
+    <ClCompile Include="demo_c335.cpp" />
+    <ClCompile Include="demo_c336.cpp" />
+    <ClCompile Include="demo_c337.cpp" />
+    <ClCompile Include="demo_c338.cpp" />
+    <ClCompile Include="demo_c339.cpp" />
+    <ClCompile Include="demo_c34.cpp" />
+    <ClCompile Include="demo_c340.cpp" />
+    <ClCompile Include="demo_c341.cpp" />
+    <ClCompile Include="demo_c342.cpp" />
+    <ClCompile Include="demo_c343.cpp" />
+    <ClCompile Include="demo_c344.cpp" />
+    <ClCompile Include="demo_c345.cpp" />
+    <ClCompile Include="demo_c346.cpp" />
+    <ClCompile Include="demo_c347.cpp" />
+    <ClCompile Include="demo_c348.cpp" />
+    <ClCompile Include="demo_c349.cpp" />
+    <ClCompile Include="demo_c35.cpp" />
+    <ClCompile Include="demo_c350.cpp" />
+    <ClCompile Include="demo_c351.cpp" />
+    <ClCompile Include="demo_c352.cpp" />
+    <ClCompile Include="demo_c353.cpp" />
+    <ClCompile Include="demo_c354.cpp" />
+    <ClCompile Include="demo_c355.cpp" />
+    <ClCompile Include="demo_c356.cpp" />
+    <ClCompile Include="demo_c357.cpp" />
+    <ClCompile Include="demo_c358.cpp" />
+    <ClCompile Include="demo_c359.cpp" />
+    <ClCompile Include="demo_c36.cpp" />
+    <ClCompile Include="demo_c360.cpp" />
+    <ClCompile Include="demo_c361.cpp" />
+    <ClCompile Include="demo_c362.cpp" />
+    <ClCompile Include="demo_c363.cpp" />
+    <ClCompile Include="demo_c364.cpp" />
+    <ClCompile Include="demo_c365.cpp" />
+    <ClCompile Include="demo_c366.cpp" />
+    <ClCompile Include="demo_c367.cpp" />
+    <ClCompile Include="demo_c368.cpp" />
+    <ClCompile Include="demo_c369.cpp" />
+    <ClCompile Include="demo_c37.cpp" />
+    <ClCompile Include="demo_c370.cpp" />
+    <ClCompile Include="demo_c371.cpp" />
+    <ClCompile Include="demo_c372.cpp" />
+    <ClCompile Include="demo_c373.cpp" />
+    <ClCompile Include="demo_c374.cpp" />
+    <ClCompile Include="demo_c375.cpp" />
+    <ClCompile Include="demo_c376.cpp" />
+    <ClCompile Include="demo_c377.cpp" />
+    <ClCompile Include="demo_c378.cpp" />
+    <ClCompile Include="demo_c379.cpp" />
+    <ClCompile Include="demo_c38.cpp" />
+    <ClCompile Include="demo_c380.cpp" />
+    <ClCompile Include="demo_c381.cpp" />
+    <ClCompile Include="demo_c382.cpp" />
+    <ClCompile Include="demo_c383.cpp" />
+    <ClCompile Include="demo_c384.cpp" />
+    <ClCompile Include="demo_c385.cpp" />
+    <ClCompile Include="demo_c386.cpp" />
+    <ClCompile Include="demo_c387.cpp" />
+    <ClCompile Include="demo_c388.cpp" />
+    <ClCompile Include="demo_c389.cpp" />
+    <ClCompile Include="demo_c39.cpp" />
+    <ClCompile Include="demo_c390.cpp" />
+    <ClCompile Include="demo_c391.cpp" />
+    <ClCompile Include="demo_c392.cpp" />
+    <ClCompile Include="demo_c393.cpp" />
+    <ClCompile Include="demo_c394.cpp" />
+    <ClCompile Include="demo_c395.cpp" />
+    <ClCompile Include="demo_c396.cpp" />
+    <ClCompile Include="demo_c397.cpp" />
+    <ClCompile Include="demo_c398.cpp" />
+    <ClCompile Include="demo_c399.cpp" />
+    <ClCompile Include="demo_c4.cpp" />
+    <ClCompile Include="demo_c40.cpp" />
+    <ClCompile Include="demo_c400.cpp" />
+    <ClCompile Include="demo_c401.cpp" />
+    <ClCompile Include="demo_c402.cpp" />
+    <ClCompile Include="demo_c403.cpp" />
+    <ClCompile Include="demo_c404.cpp" />
+    <ClCompile Include="demo_c405.cpp" />
+    <ClCompile Include="demo_c406.cpp" />
+    <ClCompile Include="demo_c407.cpp" />
+    <ClCompile Include="demo_c408.cpp" />
+    <ClCompile Include="demo_c409.cpp" />
+    <ClCompile Include="demo_c41.cpp" />
+    <ClCompile Include="demo_c410.cpp" />
+    <ClCompile Include="demo_c411.cpp" />
+    <ClCompile Include="demo_c412.cpp" />
+    <ClCompile Include="demo_c413.cpp" />
+    <ClCompile Include="demo_c414.cpp" />
+    <ClCompile Include="demo_c415.cpp" />
+    <ClCompile Include="demo_c416.cpp" />
+    <ClCompile Include="demo_c417.cpp" />
+    <ClCompile Include="demo_c418.cpp" />
+    <ClCompile Include="demo_c419.cpp" />
+    <ClCompile Include="demo_c42.cpp" />
+    <ClCompile Include="demo_c420.cpp" />
+    <ClCompile Include="demo_c421.cpp" />
+    <ClCompile Include="demo_c422.cpp" />
+    <ClCompile Include="demo_c423.cpp" />
+    <ClCompile Include="demo_c424.cpp" />
+    <ClCompile Include="demo_c425.cpp" />
+    <ClCompile Include="demo_c426.cpp" />
+    <ClCompile Include="demo_c427.cpp" />
+    <ClCompile Include="demo_c428.cpp" />
+    <ClCompile Include="demo_c429.cpp" />
+    <ClCompile Include="demo_c43.cpp" />
+    <ClCompile Include="demo_c430.cpp" />
+    <ClCompile Include="demo_c431.cpp" />
+    <ClCompile Include="demo_c432.cpp" />
+    <ClCompile Include="demo_c433.cpp" />
+    <ClCompile Include="demo_c434.cpp" />
+    <ClCompile Include="demo_c435.cpp" />
+    <ClCompile Include="demo_c436.cpp" />
+    <ClCompile Include="demo_c437.cpp" />
+    <ClCompile Include="demo_c438.cpp" />
+    <ClCompile Include="demo_c439.cpp" />
+    <ClCompile Include="demo_c44.cpp" />
+    <ClCompile Include="demo_c440.cpp" />
+    <ClCompile Include="demo_c441.cpp" />
+    <ClCompile Include="demo_c442.cpp" />
+    <ClCompile Include="demo_c443.cpp" />
+    <ClCompile Include="demo_c444.cpp" />
+    <ClCompile Include="demo_c445.cpp" />
+    <ClCompile Include="demo_c446.cpp" />
+    <ClCompile Include="demo_c447.cpp" />
+    <ClCompile Include="demo_c448.cpp" />
+    <ClCompile Include="demo_c449.cpp" />
+    <ClCompile Include="demo_c45.cpp" />
+    <ClCompile Include="demo_c450.cpp" />
+    <ClCompile Include="demo_c451.cpp" />
+    <ClCompile Include="demo_c452.cpp" />
+    <ClCompile Include="demo_c453.cpp" />
+    <ClCompile Include="demo_c454.cpp" />
+    <ClCompile Include="demo_c455.cpp" />
+    <ClCompile Include="demo_c456.cpp" />
+    <ClCompile Include="demo_c457.cpp" />
+    <ClCompile Include="demo_c458.cpp" />
+    <ClCompile Include="demo_c459.cpp" />
+    <ClCompile Include="demo_c46.cpp" />
+    <ClCompile Include="demo_c460.cpp" />
+    <ClCompile Include="demo_c461.cpp" />
+    <ClCompile Include="demo_c462.cpp" />
+    <ClCompile Include="demo_c463.cpp" />
+    <ClCompile Include="demo_c464.cpp" />
+    <ClCompile Include="demo_c465.cpp" />
+    <ClCompile Include="demo_c466.cpp" />
+    <ClCompile Include="demo_c467.cpp" />
+    <ClCompile Include="demo_c468.cpp" />
+    <ClCompile Include="demo_c469.cpp" />
+    <ClCompile Include="demo_c47.cpp" />
+    <ClCompile Include="demo_c470.cpp" />
+    <ClCompile Include="demo_c471.cpp" />
+    <ClCompile Include="demo_c472.cpp" />
+    <ClCompile Include="demo_c473.cpp" />
+    <ClCompile Include="demo_c474.cpp" />
+    <ClCompile Include="demo_c475.cpp" />
+    <ClCompile Include="demo_c476.cpp" />
+    <ClCompile Include="demo_c477.cpp" />
+    <ClCompile Include="demo_c478.cpp" />
+    <ClCompile Include="demo_c479.cpp" />
+    <ClCompile Include="demo_c48.cpp" />
+    <ClCompile Include="demo_c480.cpp" />
+    <ClCompile Include="demo_c481.cpp" />
+    <ClCompile Include="demo_c482.cpp" />
+    <ClCompile Include="demo_c483.cpp" />
+    <ClCompile Include="demo_c484.cpp" />
+    <ClCompile Include="demo_c485.cpp" />
+    <ClCompile Include="demo_c486.cpp" />
+    <ClCompile Include="demo_c487.cpp" />
+    <ClCompile Include="demo_c488.cpp" />
+    <ClCompile Include="demo_c489.cpp" />
+    <ClCompile Include="demo_c49.cpp" />
+    <ClCompile Include="demo_c490.cpp" />
+    <ClCompile Include="demo_c491.cpp" />
+    <ClCompile Include="demo_c492.cpp" />
+    <ClCompile Include="demo_c493.cpp" />
+    <ClCompile Include="demo_c494.cpp" />
+    <ClCompile Include="demo_c495.cpp" />
+    <ClCompile Include="demo_c496.cpp" />
+    <ClCompile Include="demo_c497.cpp" />
+    <ClCompile Include="demo_c498.cpp" />
+    <ClCompile Include="demo_c499.cpp" />
+    <ClCompile Include="demo_c5.cpp" />
+    <ClCompile Include="demo_c50.cpp" />
+    <ClCompile Include="demo_c500.cpp" />
+    <ClCompile Include="demo_c51.cpp" />
+    <ClCompile Include="demo_c52.cpp" />
+    <ClCompile Include="demo_c53.cpp" />
+    <ClCompile Include="demo_c54.cpp" />
+    <ClCompile Include="demo_c55.cpp" />
+    <ClCompile Include="demo_c56.cpp" />
+    <ClCompile Include="demo_c57.cpp" />
+    <ClCompile Include="demo_c58.cpp" />
+    <ClCompile Include="demo_c59.cpp" />
+    <ClCompile Include="demo_c6.cpp" />
+    <ClCompile Include="demo_c60.cpp" />
+    <ClCompile Include="demo_c61.cpp" />
+    <ClCompile Include="demo_c62.cpp" />
+    <ClCompile Include="demo_c63.cpp" />
+    <ClCompile Include="demo_c64.cpp" />
+    <ClCompile Include="demo_c65.cpp" />
+    <ClCompile Include="demo_c66.cpp" />
+    <ClCompile Include="demo_c67.cpp" />
+    <ClCompile Include="demo_c68.cpp" />
+    <ClCompile Include="demo_c69.cpp" />
+    <ClCompile Include="demo_c7.cpp" />
+    <ClCompile Include="demo_c70.cpp" />
+    <ClCompile Include="demo_c71.cpp" />
+    <ClCompile Include="demo_c72.cpp" />
+    <ClCompile Include="demo_c73.cpp" />
+    <ClCompile Include="demo_c74.cpp" />
+    <ClCompile Include="demo_c75.cpp" />
+    <ClCompile Include="demo_c76.cpp" />
+    <ClCompile Include="demo_c77.cpp" />
+    <ClCompile Include="demo_c78.cpp" />
+    <ClCompile Include="demo_c79.cpp" />
+    <ClCompile Include="demo_c8.cpp" />
+    <ClCompile Include="demo_c80.cpp" />
+    <ClCompile Include="demo_c81.cpp" />
+    <ClCompile Include="demo_c82.cpp" />
+    <ClCompile Include="demo_c83.cpp" />
+    <ClCompile Include="demo_c84.cpp" />
+    <ClCompile Include="demo_c85.cpp" />
+    <ClCompile Include="demo_c86.cpp" />
+    <ClCompile Include="demo_c87.cpp" />
+    <ClCompile Include="demo_c88.cpp" />
+    <ClCompile Include="demo_c89.cpp" />
+    <ClCompile Include="demo_c9.cpp" />
+    <ClCompile Include="demo_c90.cpp" />
+    <ClCompile Include="demo_c91.cpp" />
+    <ClCompile Include="demo_c92.cpp" />
+    <ClCompile Include="demo_c93.cpp" />
+    <ClCompile Include="demo_c94.cpp" />
+    <ClCompile Include="demo_c95.cpp" />
+    <ClCompile Include="demo_c96.cpp" />
+    <ClCompile Include="demo_c97.cpp" />
+    <ClCompile Include="demo_c98.cpp" />
+    <ClCompile Include="demo_c99.cpp" />
+    <ClCompile Include="Project1.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
